@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jonathan Nargi Dev</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link 
+    href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&
+    display=swap" 
+    rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link 
+    rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" 
+    />
+
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="icon" type="image/png" href="images/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
+    <link rel="manifest" href="images/site.webmanifest" />
+</head>
+<body>
+    <div class="header-container">
+        <div class="header-box">
+            <h1>Welcome to my site</h1>
+        </div>
+    </div>
+    <div class="border-box">
+        <div class="text-wrapper">
+          <p class="box-text">Hello, my name is Jonathan Nargi<br>and I am a
+            <span class="redacted">software</span> developer.
+          </p>
+        </div>
+        <img src="images/spy.png" alt="spy" class="side-img">
+        <button class="btn-1" onclick="scrollToSection()">Enter dossier</button>
+    </div>
+    <div class="card">
+        <div class="card-header">About me</div>
+    </div>
+    <div class="box-container">
+        <div class="box-box">
+            <div>
+                <div class="card-content">
+                    <div class="card-text">
+                        <div class="underline">Name: Jonathan Nargi</div>
+                        <div class="underline">Major: Computer Science</div>
+                        <div class="underline">School: <span class="redacted">Undecided</span></div>
+                    </div>
+                    <div class="box-grid">
+                        <div class="card-box">CS Student</div>
+                        <div class="card-box"><span class="redacted">Weight lifter</span></div>
+                        <div class="card-box"><span class="redacted">Snowboarder</span></div>
+                        <div class="card-box">Cook</div>
+                        <div class="card-box">Car Enthusiast</div>
+                        <div class="card-box">Tech Aficionado</div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="target-section">
+                <p class="about">Call me Jack.<br>
+                    I'm a computer science student passionate about all things tech. 
+                    As I enter the programming field, my interests are focused on artificial intelligence and 
+                    cybersecurity—two areas where innovation meets critical problem-solving. I’m detail-driven, 
+                    curious, and always eager to learn more about how technology shapes our world.
+                    Whether I'm writing code or exploring new systems, I bring a deep fascination and determination to everything I do.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="card-row">
+        <div class="card">
+            <div class="card-header">Projects</div>
+            <a href="https://github.com/Zoxics" target="_blank" rel="noopener noreferrer" class="folder-wrapper">
+                <svg viewBox="0 0 300 160" class="folder-svg" xmlns="http://www.w3.org/2000/svg">
+    
+                    <defs>
+                        <pattern id="paperTexture" patternUnits="userSpaceOnUse" width="300" height="160">
+                            <image href="images/construction-paper.png" x="0" y="0" width="300" height="160" preserveAspectRatio="xMidYMid slice" />
+                        </pattern>
+                    </defs>
+
+                    <path d="M10 40 H90 L100 20 H290 V140 H10 Z" class="folder-back" />
+
+                    <rect id="paper1" x="28" y="55" width="244" height="80" rx="2" class="paper-sheet paper1" />
+                    <rect id="paper2" x="26" y="53" width="248" height="80" rx="2" class="paper-sheet paper2" />
+                    <rect id="paper3" x="24" y="51" width="252" height="80" rx="2" class="paper-sheet paper3" />
+
+
+                    <g class="front-panel">
+                        <path d="M10 40 H290 V140 H10 Z" class="folder-back" />
+                        <text x="150" y="90" class="label" text-anchor="middle" dominant-baseline="middle">CONFIDENTIAL</text>
+                    </g>
+                </svg>
+            </a>
+        </div>
+        <div class="certifications-box">
+            <div class="certifications-header">Certifications</div>
+
+            <div class="jukebox-frame">
+                <div class="jukebox-container">
+                <div class="jukebox-track">
+                    <a href="https://www.credly.com/earner/earned/badge/32effd86-55d3-4757-8437-f424c538bbdc" target="_blank" class="cert-card">
+                    <img src="images/AWS CCP.png" alt="AWS CCP Badge" class="cert-logo" />
+                    </a>
+                    <a href="https://www.credly.com/earner/earned/badge/3ad89086-5ad8-48ce-b328-a0a65d022d6e" target="_blank" class="cert-card">
+                    <img src="images/AWS CLOUD 101.png" alt="AWS SAA Badge" class="cert-logo" />
+                    </a>
+                    <a href="https://www.credly.com/earner/earned/badge/96b7db3e-b8cb-4382-af8e-71fea37e635b" target="_blank" class="cert-card">
+                    <img src="images/AWS Serverless.png" alt="AWS SAA Badge" class="cert-logo" />
+                    </a>
+                    <a href="https://www.credly.com/earner/earned/badge/0dcfa34b-0ec1-4429-a5f0-12ba8a76fa89" target="_blank" class="cert-card">
+                    <img src="images/AWS Security.png" alt="AWS SAA Badge" class="cert-logo" />
+                    </a>
+                </div>
+                </div>
+            </div>
+            </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+

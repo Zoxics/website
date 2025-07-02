@@ -1,0 +1,439 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+:root {
+    --primary-color: #BE4E2D;
+    --light-color: #EADBBE;
+    --second-light: #D6BE95;
+    --dark-color: #1C4848;
+}
+
+body {
+    font-family: 'Space Mono', monospace;
+    line-height: 1.5;
+    background: var(--light-color);
+    color: var(--primary-color);
+}
+
+.header-container {
+    display: flex;
+    justify-content: center; 
+    padding-top: 5vh;
+}
+
+.header-box {
+    background-color: var(--primary-color);
+    width: min(90%, 1500px);
+    padding: 3rem 5vw;
+    text-align: center;
+    color: var(--light-color);
+    font-family: 'Staatliches', sans-serif;
+    box-sizing: border-box;
+}
+
+
+.header-box h1 {
+    font-size: clamp(5rem, 7.5vw, 5rem);
+    letter-spacing: 4px;
+    margin: 0;
+}
+
+.border-box {
+    position: relative;
+    width: min(90%, 1500px);
+    margin: 0 auto;
+    padding: 3rem 2vw 3rem 2vw;
+    border: 4px solid var(--dark-color);
+    border-top: none;
+    box-sizing: border-box;
+    color: var(--dark-color);
+    font-family: 'Staatliches', sans-serif;
+    min-height: clamp(250px, 25vw, 400px);
+    overflow: hidden;
+    background-image: url("../images/construction-paper.png");
+    background-size: cover;
+    background-position: cover;
+}
+
+.box-content {
+    display: flex;
+    align-items: stretch;
+    gap: 2rem;
+    gap: 2rem;
+}
+
+.text-wrapper {
+    max-width: 60%
+}
+
+.box-text{
+    font-size: clamp(2.2rem, 2.2vw, 1.8rem);
+    line-height: 1.8;
+    margin: 0;
+}
+
+.side-img {
+    position: absolute;
+    right: 0;
+    width: clamp(180px, 30vw, 500px);
+    bottom: 0;
+    transform: translateY(20%);
+    object-fit: cover;
+    height: auto;
+    border-radius: 0;
+    user-select: none;
+}
+
+.redacted {
+    position: relative;
+    white-space: pre;
+    user-select: none;
+    &:after {
+        background: var(--dark-color);
+        border-radius: 0.1em;
+        box-shadow: 0 0 1px rgba(0,0,0,0.35);
+        content: " ";
+        width: 101%;
+        height: 1.3em;
+        left: 0;
+        top: 0.01em;
+        position: absolute;
+        transform: skewY(-5deg) rotate(5deg);
+        pointer-events: none;
+        transition: opacity 0.15s ease-out;
+    }
+    &:nth-child(1){
+        transform: rotate(1deg);
+    }
+    
+    &:nth-child(2){
+        transform: rotate(-1deg);
+    }
+    
+    &:nth-child(5){
+        transform: rotate(2deg);
+    }
+    &:hover::after {
+        opacity: 0;
+    }
+}
+
+.btn-1 {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    border-radius: 3px;
+    position: relative;
+    margin-top: 4rem;
+    border: 0;
+    cursor: pointer;
+    margin: 2.5rem;
+    font-family: 'Staatliches', sans-serif;
+    font-size: 2.5rem;
+    padding: 1rem;
+    font-weight: 300;
+    transform: scaleX(1.15);
+    transform-origin: center;
+    flex: 1;
+}
+
+.btn-1:hover{
+    background-color: #c34a25;
+    transition: 0.2s;
+}
+
+.btn-2 {
+    background-image: url("../images/construction-paper.png");
+    /* background-color: var(--light-color); */
+    color: var(--primary-color);
+    padding: 2rem;
+    font-family: 'Staatliches', sans-serif;
+    font-size: 2.5rem;
+    border: solid 2px var(--dark-color);
+}
+
+.btn-2:hover {
+    transition: 0.2s;
+}
+
+.card {
+    width: min(90%, 1500px);
+    margin: auto ;
+    padding-top: 2.5rem;
+    padding-right: 2vh;
+    padding-bottom: 2vh;
+    padding-left: 2vh;
+    box-sizing: border-box;
+    display: block;
+    justify-content: center;
+    
+    
+}
+
+.card-header {
+    font-family: 'Staatliches', sans-serif;
+    font-size: 4rem;
+    letter-spacing: 2px;
+    display: flex;
+    box-sizing: border-box;
+    
+}
+
+
+.box-container {
+    display: flex;
+    justify-content: center; 
+}
+
+.box-box {
+    width: min(90%, 1500px);
+    display: flex;
+    justify-content: flex-start;
+    text-align: left;
+    color: var(--light-color);
+    box-sizing: border-box;
+}
+
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 2vw;
+    margin: 0 auto;
+    border: 4px solid var(--dark-color);
+    border-radius: 25px;
+    color: var(--dark-color);
+    font-weight: 600;
+    font-size: 2rem;
+    box-shadow: 10px 10px;
+    box-sizing: border-box;
+    background-image: url("../images/construction-paper.png");
+    background-size: cover;
+    background-position: cover;
+}
+
+.card-text {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+}
+
+.underline {
+    border-bottom: var(--dark-color) solid 3px;
+}
+
+.box-grid {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.card-box {
+    position: relative;
+    width: 100%;
+    padding: 1rem;
+    border: 3px solid var(--dark-color);
+    border-radius: 15px;
+    color: var(--dark-color);
+    font-weight: 600;
+    font-size: 2rem;
+    text-align: center;
+    display: grid;
+    white-space: normal;
+    word-break: break-word;
+    user-select: none;
+}
+
+.card-box:hover {
+    background-color: var(--second-light);
+    color: var(--dark-color);
+    transition: 0.5s
+}
+
+.about {
+    position: relative;
+    color: var(--dark-color);
+    display: grid;
+    padding: 1rem;
+    font-size: clamp(2rem, 4vw, 2rem);
+    font-weight: 400;
+    margin: 2rem;
+    white-space: normal;
+    word-break: break-word;
+    font-family: 'Staatliches', sans-serif;
+    letter-spacing: 2px;
+}
+
+
+.folder-wrapper {
+    width: 100%;
+    max-width: 400px;
+}
+
+.folder-svg {
+    width: 60%;
+    height: auto;
+}
+
+.front-panel {
+    transform-origin: bottom center;
+    transition: transform 0.4s ease;
+}
+
+.folder-wrapper:hover .front-panel {
+    transform: rotateX(-25deg);
+}
+
+
+.paper-sheet {
+  fill: white;
+  stroke: #999;
+  stroke-width: 2;
+  stroke-linecap: square;
+  transition: transform 0.4s ease;
+  transform-origin: top left;
+}
+
+.paper1 {
+  fill: #fffaf0; 
+}
+
+.paper2 {
+  fill: #f8eedc;
+}
+
+.paper3 {
+  fill: #e3d8c4;
+}
+
+.folder-wrapper:hover .paper1 {
+  transform: translateY(-18px) rotate(-4deg);
+}
+
+.folder-wrapper:hover .paper2 {
+  transform: translateY(-10px) rotate(-3deg);
+}
+
+.folder-wrapper:hover .paper3 {
+  transform: translateY(-5px) rotate(-1deg);
+}
+
+.label {
+    font-family: 'Staatliches', sans-serif;
+    fill: var(--primary-color);
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+.folder-back {
+    fill: url("#paperTexture");
+    stroke: var(--dark-color);
+    stroke-width: 3;
+}
+
+.card-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    width: min(90%, 1500px);
+    margin: 1rem auto;
+    flex-wrap: wrap;
+}
+
+.card-row > .card,
+.card-row > .certifications-box {
+    flex: 1;
+    min-width: 300px;
+}
+
+.certifications-box {
+    display: block;
+    padding-top: 0;
+    margin-left: 0;
+}
+
+.certifications-header {
+    font-family: 'Staatliches', sans-serif;
+    color: var(--primary-color);
+    font-size: 4rem;
+    letter-spacing: 2px;
+    margin: 0rem;
+    margin-left: 4rem;
+    padding-top: 2.5rem ;
+}
+
+
+.jukebox-frame {
+    position: relative;
+    width: 100%;
+    max-width: 500px; /* aligns with folder width */
+    background: linear-gradient(145deg, var(--primary-color), #f77b55);
+    padding: 1rem;
+    border-radius: 60px;
+    box-shadow: 0 0 20px rgba(190, 78, 45, 0.4);
+    overflow: hidden;
+    border: 4px solid var(--dark-color);
+    margin-top: 1rem;
+    margin-left: 0; /* align right */
+}
+
+.jukebox-container {
+    overflow: hidden;
+    height: 160px;
+    z-index: 2;
+    cursor: none; /* Hide cursor when hovering */
+}
+
+.jukebox-container:hover {
+    cursor: none;
+}
+
+.jukebox-track {
+    display: flex;
+    gap: 1.5rem;
+    padding: 1rem;
+    transition: transform 0.05s ease-out;
+    will-change: transform;
+}
+
+.cert-card {
+    flex: 0 0 auto;
+    min-width: 120px;
+    max-width: 120px;
+    height: 120px;
+    background: var(--light-color);
+    border: 3px solid var(--dark-color);
+    border-radius: 12px;
+    box-shadow: 4px 4px var(--dark-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: transform 0.2s;
+}
+
+.cert-card:hover {
+    transform: scale(1.05);
+}
+
+.cert-logo {
+    width: 100%;
+    height: auto;
+    max-height: 100px;
+    object-fit: contain;
+    pointer-events: none;
+}
+@media (max-width: 600px) {
+    .box-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
