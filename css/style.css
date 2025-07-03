@@ -527,5 +527,13 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+  .box-box {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
 
 
